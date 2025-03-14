@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="Master" value=" Reserve Edition"/>
+  <parameter name="Ishraq" value=" Triple Crown"/>
+  <test parallel="none" name="Test(failed)">
+    <parameter name="Master" value=" Reserve Edition"/>
+    <parameter name="Ishraq" value=" Triple Crown"/>
+    <groups>
+      <run>
+        <include name="run"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="In.Amazon.EnglishWillowBat">
+        <methods>
+          <include name="Product_Price"/>
+          <include name="Search_Bar" invocation-numbers="0"/>
+          <include name="Tab_Shift"/>
+          <include name="Bat_Name"/>
+          <include name="SG_Bat"/>
+          <include name="Select_Item"/>
+        </methods>
+      </class> <!-- In.Amazon.EnglishWillowBat -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
