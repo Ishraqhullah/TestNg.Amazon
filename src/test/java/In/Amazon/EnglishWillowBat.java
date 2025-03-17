@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterClass;
@@ -25,6 +26,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -52,14 +54,16 @@ public class EnglishWillowBat {
 	public void AS() {
 		
 	}
-
+	
 	@BeforeClass(groups="run")
 	public void LaunchBrowser() {
-		WebDriverManager.edgedriver().setup();
-		EdgeOptions options = new EdgeOptions();
+    	WebDriverManager.edgedriver().setup();
+    	EdgeOptions options = new EdgeOptions();
+    		
 		options.addArguments("--start-maximized");
-		//options.addArguments("--headless");
+		options.addArguments("--headless");
 		options.addArguments("--disable-notification");
+		
 		driver = new EdgeDriver(options);
 		String url = "https://www.amazon.in/";
 		driver.get(url);
@@ -115,7 +119,7 @@ public class EnglishWillowBat {
 		System.out.println(text1);
 	}
 
-	@Parameters({ "Ishraq" })
+	@Parameters({"Ishraq"})
 	@BeforeMethod
 	public void Start(String value) {
 		System.out.println(value);

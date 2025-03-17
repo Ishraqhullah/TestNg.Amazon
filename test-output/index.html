@@ -202,13 +202,14 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;none&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;In.Amazon.Transformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;Master&quot; value=&quot; Reserve Edition&quot;/&gt;
-    &lt;parameter name=&quot;Ishraq&quot; value=&quot; Triple Crown&quot;/&gt;
+    &lt;parameter name=&quot;Ishraq&quot; value=&quot;crown&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;run&quot;/&gt;
-        &lt;exclude name=&quot;Avoid&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -284,27 +285,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Bat_Name')
 data.setCell(0, 2, 'In.Amazon.EnglishWillowBat')
-data.setCell(0, 3, 3809);
+data.setCell(0, 3, 4550);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Search_Bar')
 data.setCell(1, 2, 'In.Amazon.EnglishWillowBat')
-data.setCell(1, 3, 3248);
+data.setCell(1, 3, 2516);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Select_Item')
+data.setCell(2, 1, 'SG_Bat')
 data.setCell(2, 2, 'In.Amazon.EnglishWillowBat')
-data.setCell(2, 3, 488);
+data.setCell(2, 3, 669);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'SG_Bat')
+data.setCell(3, 1, 'Select_Item')
 data.setCell(3, 2, 'In.Amazon.EnglishWillowBat')
-data.setCell(3, 3, 410);
+data.setCell(3, 3, 313);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Product_Price')
 data.setCell(4, 2, 'In.Amazon.EnglishWillowBat')
-data.setCell(4, 3, 164);
+data.setCell(4, 3, 289);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Tab_Shift')
 data.setCell(5, 2, 'In.Amazon.EnglishWillowBat')
-data.setCell(5, 3, 56);
+data.setCell(5, 3, 35);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -342,31 +343,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Search_Bar(sg cricket bat)</span>
-                <span class="method-start">4981 ms</span>
+                <span class="method-start">7477 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Select_Item</span>
-                <span class="method-start">8234 ms</span>
+                <span class="method-start">9995 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Tab_Shift</span>
-                <span class="method-start">8727 ms</span>
+                <span class="method-start">10309 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Bat_Name</span>
-                <span class="method-start">8783 ms</span>
+                <span class="method-start">10345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SG_Bat</span>
-                <span class="method-start">12600 ms</span>
+                <span class="method-start">14896 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Product_Price</span>
-                <span class="method-start">13010 ms</span>
+                <span class="method-start">15566 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">13174 ms</span>
+                <span class="method-start">15856 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
